@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-orange: #D94A26;
+  --color-brand-dark: #333333;
+  --color-brand-light: #f4f4f4;
+  
+  /* --- UPDATE FONTS HERE --- */
+  /* 'Inter' for the main text (clean & readable) */
+  --font-sans: "Inter", "sans-serif";
+  
+  /* 'Playfair Display' for the 'TC' logo and specific headings */
+  --font-serif: "Playfair Display", "serif";
+}
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+  /* This forces the whole site to use Inter by default */
+  font-family: "Inter", sans-serif; 
+}
+
+body {
+  @apply bg-gray-50;
+}
